@@ -1,0 +1,10 @@
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 50em) {
+  .wrapper {
+    grid-template-columns: auto 2fr auto;
+    grid-template-areas: "oben oben oben" "links inhalt rechts" "unten unten unten";
+  }
+}

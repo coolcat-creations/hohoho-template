@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.7" type="template">
+	<name>hohoho</name>
+	<creationDate>09-12-2017</creationDate>
+	<author>Rudolph Rentier</author>
+	<authorEmail>rudolph@rentier.de</authorEmail>
+	<authorUrl>http://www.joomla.de</authorUrl>
+	<copyright>joomla.de</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>TPL_HOHOHO_DESC</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+	</files>
+	<positions>
+		<position>links</position>
+		<position>rechts</position>
+		<position>oben</position>
+		<position>unten</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_hohoho.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_hohoho.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_hohoho.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_hohoho.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+
+			<field name="mainoutput"
+			       label="TPL_HOHOHO_FIELD_MAINOUTPUT_LABEL"
+			       description="TPL_HOHOHO_FIELD_MAINOUTPUT_DESC"
+			       type="list"
+			       default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

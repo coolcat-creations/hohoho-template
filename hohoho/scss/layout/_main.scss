@@ -1,0 +1,67 @@
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+}
+
+html {
+  background: $primarylight; /* Alte Browser */
+  background: -moz-radial-gradient(center, ellipse cover, $primarylight 1%, $primarydark 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, $primarylight 1%, $primarydark  100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, $primarylight 1%, $primarydark  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primarylight, endColorstr=$primarydark, GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $sansserif;
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.oben {
+  grid-area: oben;
+}
+
+.links {
+  grid-area: links;
+  max-width: 10em;
+}
+
+.inhalt {
+  grid-area: inhalt;
+}
+
+.rechts {
+  grid-area: rechts;
+  max-width: 10em;
+}
+
+.unten {
+  grid-area: unten;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-areas: "oben" "links" "inhalt" "rechts" "unten";
+  width: 100%;
+  margin:0pt auto;
+}
+
+.box {
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  font-size: 1rem;
+}
